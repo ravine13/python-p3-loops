@@ -24,6 +24,8 @@ class TestHappyNewYear:
         remaining_digits = [i for i in digit_strings if i not in answer_list] 
         assert remaining_digits == [], f"You didn't print all digits 1-10, missing {', '.join(remaining_digits)}"
 
+
+
 class TestSquareIntegers:
     '''square_integers() in looping.py'''
 

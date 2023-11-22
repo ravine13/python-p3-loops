@@ -4,24 +4,21 @@ def happy_new_year():
     i = 10
     while i > 0:
         print(i)
-        i -=1
-        print("Happy New Year!")
-
-
+        i -= 1
+    print('Happy New Year!')
 
 def square_integers(int_list):
-    squared_list = []
-    for num in int_list:
-        squared = num * num
-        squared_list.append(squared)
-    return squared_list
+    return [i * i for i in int_list]
+
 def fizzbuzz():
-       for number in range(1, 101): 
-        if number % 3 == 0 and number % 5 == 0: 
-            print("FizzBuzz") 
-        elif number % 3 == 0:
-            print("Fizz") 
-        elif number % 5 == 0:
-            print("Buzz") 
-        else: 
-            print(number) 
+    for i in range(101):
+        if i == 0:
+            pass
+        elif i % 3 == 0 and i % 5 == 0:
+            print('FizzBuzz')
+        elif i % 3 == 0:
+            print('Fizz')
+        elif i % 5 == 0:
+            print('Buzz')
+        else:
+            print(i)
